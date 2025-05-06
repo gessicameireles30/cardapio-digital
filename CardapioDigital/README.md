@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# 📱 Cardápio Digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **Cardápio Digital** é uma aplicação web desenvolvida em Java com Spring Boot que permite o gerenciamento de um cardápio digital para restaurantes, lanchonetes ou similares. A plataforma facilita o cadastro e visualização de itens do cardápio de forma simples, moderna e acessível.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Java 17**
+- **Spring Boot 3.4.5**
+- **Spring Data JPA**
+- **Flyway** 
+- **PostgreSQL 13.20**
+- **Lombok**
+- **Maven**
+- **Spring DevTools**
+- **JWT**
 
-## Expanding the ESLint configuration
+## 🛠️ Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Cadastro de itens do cardápio
+- Listagem de todos os pratos disponíveis
+- Migrações automáticas de banco com Flyway
+- Conexão com banco de dados PostgreSQL
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## ⚙️ Configuração
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Pré-requisitos
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Java 17 instalado  
+- PostgreSQL 13.20 em execução  
+- Maven  
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 🏃 Como executar
+
+```bash
+git clone https://github.com/seu-usuario/cardapioDigital.git
+cd cardapioDigital
+
+
+ Configure o application.properties com suas credenciais PostgreSQL.
+
+ Execute a aplicação:
+./mvnw spring-boot:run
+
+Acesse: http://localhost:8080/food
+
+🧑‍💻 Autor
+Desenvolvido por Géssica Meireles
+💼 LinkedIn https://www.linkedin.com/in/g%C3%A9ssica-meireles-desenvolvedora-backend/
+📧 gessicadasilvameireles@email.com
